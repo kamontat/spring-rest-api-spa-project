@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.kamontat.services.TestTopicService</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.kamontat.services.TestTopicService</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.kamontat.services.html">com.kamontat.services</a> &gt; TestTopicService</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.020s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldBeEmptyTopic</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldGetIndvTopic</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldInsertCompleted</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2018-03-21 11:27:28.898  INFO 40647 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kamontat.services.TestTopicService], using SpringBootContextLoader
+2018-03-21 11:27:28.899  INFO 40647 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kamontat.services.TestTopicService]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-03-21 11:27:28.899  INFO 40647 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kamontat.services.TestTopicService]: TestTopicService does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-03-21 11:27:28.912  INFO 40647 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kamontat.Application for test class com.kamontat.services.TestTopicService
+2018-03-21 11:27:28.913  INFO 40647 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-21 11:27:28.914  INFO 40647 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@35608a4c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62c32153, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e5146cb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3b3f2e3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@abce1fd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@710e9040, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@657de7b4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27716be9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a2fd5f3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4fa6d066, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@456cce61, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@69eecb06]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.0.RELEASE)
+
+2018-03-21 11:27:28.940  INFO 40647 --- [    Test worker] com.kamontat.services.TestTopicService   : Starting TestTopicService on kamontats-MacBook-Pro.local with PID 40647 (started by kamontat in /Users/kamontat/Documents/IdeaProjects/course-api)
+2018-03-21 11:27:28.940  INFO 40647 --- [    Test worker] com.kamontat.services.TestTopicService   : The following profiles are active: dev
+2018-03-21 11:27:28.944  INFO 40647 --- [    Test worker] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47800a16: startup date [Wed Mar 21 11:27:28 ICT 2018]; root of context hierarchy
+2018-03-21 11:27:29.612  INFO 40647 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c045802f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-21 11:27:29.737  INFO 40647 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2018-03-21 11:27:29.738  INFO 40647 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-21 11:27:29.738  INFO 40647 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-21 11:27:29.747  INFO 40647 --- [ost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2018-03-21 11:27:29.748  INFO 40647 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 804 ms
+2018-03-21 11:27:30.174  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-03-21 11:27:30.175  INFO 40647 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-03-21 11:27:30.207  INFO 40647 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-03-21 11:27:30.208  WARN 40647 --- [    Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2018-03-21 11:27:30.212  INFO 40647 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2018-03-21 11:27:30.220  INFO 40647 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-03-21 11:27:30.229  INFO 40647 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-03-21 11:27:30.230  INFO 40647 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-03-21 11:27:30.235  INFO 40647 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2018-03-21 11:27:30.367  INFO 40647 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-03-21 11:27:30.631  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47800a16: startup date [Wed Mar 21 11:27:28 ICT 2018]; root of context hierarchy
+2018-03-21 11:27:30.640  WARN 40647 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-03-21 11:27:30.656  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{id}/courses]}&quot; onto public final java.util.List&lt;com.kamontat.models.Course&gt; com.kamontat.controllers.CourseController.getAllCourse(java.lang.String)
+2018-03-21 11:27:30.657  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{id}/courses/count]}&quot; onto public final int com.kamontat.controllers.CourseController.getCountCourse(java.lang.String)
+2018-03-21 11:27:30.657  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{topicID}/course/{courseID}]}&quot; onto public final com.kamontat.models.Course com.kamontat.controllers.CourseController.getCourse(java.lang.String,java.lang.String)
+2018-03-21 11:27:30.657  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{topicID}/course],methods=[POST]}&quot; onto public final void com.kamontat.controllers.CourseController.addCourse(java.lang.String,com.kamontat.models.Course)
+2018-03-21 11:27:30.657  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{topicID}/course/{id}],methods=[PUT]}&quot; onto public final void com.kamontat.controllers.CourseController.updateCourse(java.lang.String,java.lang.String,com.kamontat.models.Course)
+2018-03-21 11:27:30.657  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{topicID}/course/{id}],methods=[DELETE]}&quot; onto public final void com.kamontat.controllers.CourseController.deleteCourse(java.lang.String)
+2018-03-21 11:27:30.658  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/greet]}&quot; onto public final java.lang.String com.kamontat.controllers.HelloController.index()
+2018-03-21 11:27:30.658  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{id}]}&quot; onto public final com.kamontat.models.Topic com.kamontat.controllers.TopicController.getTopic(java.lang.String)
+2018-03-21 11:27:30.659  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic],methods=[POST]}&quot; onto public final void com.kamontat.controllers.TopicController.addTopic(com.kamontat.models.Topic)
+2018-03-21 11:27:30.659  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topics]}&quot; onto public final java.util.List&lt;com.kamontat.models.Topic&gt; com.kamontat.controllers.TopicController.getAllTopic()
+2018-03-21 11:27:30.660  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topics/count]}&quot; onto public final int com.kamontat.controllers.TopicController.getCountTopic()
+2018-03-21 11:27:30.660  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{id}],methods=[PUT]}&quot; onto public final void com.kamontat.controllers.TopicController.updateTopic(java.lang.String,com.kamontat.models.Topic)
+2018-03-21 11:27:30.661  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/topic/{id}],methods=[DELETE]}&quot; onto public final void com.kamontat.controllers.TopicController.deleteTopic(java.lang.String)
+2018-03-21 11:27:30.663  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-21 11:27:30.663  INFO 40647 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-21 11:27:30.693  INFO 40647 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-21 11:27:30.693  INFO 40647 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-21 11:27:30.724  INFO 40647 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-21 11:27:30.919  INFO 40647 --- [    Test worker] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped &quot;{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2018-03-21 11:27:30.919  INFO 40647 --- [    Test worker] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped &quot;{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2018-03-21 11:27:30.920  INFO 40647 --- [    Test worker] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped &quot;{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}&quot; onto protected java.util.Map&lt;java.lang.String, java.util.Map&lt;java.lang.String, org.springframework.boot.actuate.endpoint.web.Link&gt;&gt; org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-21 11:27:31.078  INFO 40647 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58716 (http) with context path ''
+2018-03-21 11:27:31.080  INFO 40647 --- [    Test worker] com.kamontat.services.TestTopicService   : Started TestTopicService in 2.165 seconds (JVM running for 10.158)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.0</a> at Mar 21, 2018 11:27:31 AM</p>
+</div>
+</div>
+</body>
+</html>

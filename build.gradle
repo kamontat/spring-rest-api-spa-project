@@ -1,0 +1,51 @@
+buildscript {
+    ext.kotlin_version = '1.2.20'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.0.RELEASE"
+    }
+}
+
+group 'com.kamontat'
+version '0.0.1-alpha.1'
+
+apply plugin: 'kotlin'
+apply plugin: 'java'
+// apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: "org.jetbrains.kotlin", name: "kotlin-stdlib-jdk8", version: "$kotlin_version"
+    compile group: "org.jetbrains.kotlin", name: "kotlin-reflect", version: "$kotlin_version"
+    compile group: "com.fasterxml.jackson.module", name: "jackson-module-kotlin"
+
+    compile group: "org.apache.derby", name: "derby"
+
+    compile group: "org.springframework.boot", name: "spring-boot-starter-data-jpa"
+    compile group: "org.springframework.boot", name: "spring-boot-starter-web"
+    compile group: "org.springframework.boot", name: "spring-boot-starter-actuator"
+
+    // testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
